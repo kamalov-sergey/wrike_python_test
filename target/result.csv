@@ -1,0 +1,16 @@
+home.htm views,"            timestamp  user_id      page_name            referrer event_name                  parameters_value   event_name    sex  name  age phone            datetime  lag_page_name
+0 2016-07-27 13:54:30      123       home.htm  https://google.com                                                        NaN  male  John   35  None 2016-07-27 13:00:00               
+5 2016-07-27 13:54:30      123                                           NaN               {“dashboard_id”: 5}  get_metadata  male  John   35  None 2016-07-27 13:00:00       home.htm
+1 2016-07-27 13:54:35      123       home.htm  https://google.com                                                        NaN  male  John   35  None 2016-07-27 13:00:00  solutions.htm
+2 2016-07-27 13:54:37      123  solutions.htm  https://google.com                                                        NaN  male  John   35  None 2016-07-27 13:00:00               
+6 2016-07-27 13:54:40      123                                           NaN  {“dashboard_id”: 7, “filter”: 1}  get_metadata  male  John   35  None 2016-07-27 13:00:00       home.htm
+3 2016-07-27 14:00:00      123       home.htm  https://google.com                                                        NaN  male  John   35  None 2016-07-27 14:00:00  solutions.htm
+4 2016-07-27 14:00:01      123  solutions.htm  https://google.com                                                        NaN  male  John   35  None 2016-07-27 14:00:00            NaN"
+solutions.htm_after_home.htm views,"            timestamp  user_id      page_name            referrer event_name                  parameters_value   event_name    sex  name  age phone            datetime  lag_page_name
+0 2016-07-27 13:54:30      123       home.htm  https://google.com                                                        NaN  male  John   35  None 2016-07-27 13:00:00               
+5 2016-07-27 13:54:30      123                                           NaN               {“dashboard_id”: 5}  get_metadata  male  John   35  None 2016-07-27 13:00:00       home.htm
+1 2016-07-27 13:54:35      123       home.htm  https://google.com                                                        NaN  male  John   35  None 2016-07-27 13:00:00  solutions.htm
+2 2016-07-27 13:54:37      123  solutions.htm  https://google.com                                                        NaN  male  John   35  None 2016-07-27 13:00:00               
+6 2016-07-27 13:54:40      123                                           NaN  {“dashboard_id”: 7, “filter”: 1}  get_metadata  male  John   35  None 2016-07-27 13:00:00       home.htm
+3 2016-07-27 14:00:00      123       home.htm  https://google.com                                                        NaN  male  John   35  None 2016-07-27 14:00:00  solutions.htm
+4 2016-07-27 14:00:01      123  solutions.htm  https://google.com                                                        NaN  male  John   35  None 2016-07-27 14:00:00            NaN"
