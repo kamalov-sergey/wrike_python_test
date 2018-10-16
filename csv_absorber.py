@@ -44,13 +44,14 @@ def prepare_df_for_anl(df_all,user_for_filter):
 
 def get_quantity_int_page(df_user,interest_page):
     #получить количество заходов на инетересующую страницу по часу
-    df_user[(df_user.page_name == interest_page)].groupby(['user_id', 'datetime'])['page_name'].count()
-    return df_user
+    df_user1 = df_user[(df_user.page_name == interest_page)].groupby(['user_id', 'datetime'])['page_name'].count()
+    #print(df_user1)
+    return df_user1
 
 def get_quantity_after_int_page(df_user,interest_page,after_interest_page):
     df_user['lag_page_name'] = df_user.page_name.shift(-1)
-    df_user[(df_user.page_name == interest_page) & (df_user.lag_page_name == after_interest_page)].groupby(['user_id', 'datetime'])['page_name'].count()
-    return df_user
+    df_user2 = df_user[(df_user.page_name == interest_page) & (df_user.lag_page_name == after_interest_page)].groupby(['user_id', 'datetime'])['lag_page_name'].count()
+    return df_user2
 
 def mapper(df_user):
     #Производит рассчет метрик
