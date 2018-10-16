@@ -52,7 +52,6 @@ def get_quantity_after_int_page(df_user,interest_page,after_interest_page):
     df_user[(df_user.page_name == interest_page) & (df_user.lag_page_name == after_interest_page)].groupby(['user_id', 'datetime'])['page_name'].count()
     return df_user
 
-
 def mapper(df_user):
     #Производит рассчет метрик
     interest_page = 'home.htm' # интересующая страница, для поиска количества заходов за час
